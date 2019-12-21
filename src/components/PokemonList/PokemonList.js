@@ -19,15 +19,17 @@ class PokemonList extends Component {
 		return (
 			<div className='PokemonList'>
 				<h1>POKEMON DECK</h1>
-				{this.props.pokemon.map(pokemon => (
-					<Pokecard
-						key={pokemon.id}
-						pokemonID={pokemon.id}
-						name={pokemon.name}
-						type={pokemon.type}
-						experience={pokemon.base_experience}
-					/>
-				))}
+				<div className='PokemonList-cards'>
+					{this.props.pokemon.map(pokemon => (
+						<Pokecard
+							key={pokemon.id}
+							pokemonID={pokemon.id}
+							name={pokemon.name}
+							type={pokemon.type}
+							experience={pokemon.base_experience}
+						/>
+					))}
+				</div>
 			</div>
 		);
 	}
