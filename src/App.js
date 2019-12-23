@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import PokemonList from './components/PokemonList/PokemonList';
+import PokemonScore from './components/PokemonScore/PokemonScore';
 import './styles/Pokecard.css';
 import './styles/PokemonList.css';
 
 function App() {
 	return (
 		<div className='App'>
-			<PokemonList />
+			<PokemonScore />
 		</div>
 	);
 }
