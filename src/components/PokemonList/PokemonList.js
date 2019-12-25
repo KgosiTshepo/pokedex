@@ -4,11 +4,17 @@ class PokemonList extends Component {
 	/* static defaultProps => sets default values
 	 */
 	render() {
+		let title = this.props.isWinner ? (
+			<h1 className='PokemonList-winner'>Winning Hand</h1>
+		) : (
+			<h1 className='PokemonList-loser'>Losing Hand</h1>
+		);
 		return (
 			<div className='PokemonList'>
-				<h1>POKEMON DECK</h1>
-				<p>Total experience : {this.props.experienceScore}</p>
-				<p>{this.props.isWinner ? 'WINNER' : 'LOSER'}</p>
+				{title}
+				<h4>Total experience : {this.props.experienceScore}</h4>
+
+				{/* <p>{this.props.isWinner ? 'WINNER' : 'LOSER'}</p> */}
 				<div className='PokemonList-cards'>
 					{this.props.pokemon.map(pokemon => (
 						<Pokecard
