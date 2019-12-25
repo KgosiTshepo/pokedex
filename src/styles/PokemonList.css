@@ -1,0 +1,16 @@
+.PokemonList {
+	text-align: center;
+}
+.PokemonList-cards {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.PokemonList-winner {
+	color: #4caf50;
+}
+
+.PokemonList-loser {
+	color: #e91e63;
+}
